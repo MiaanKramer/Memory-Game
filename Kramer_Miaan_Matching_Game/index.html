@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="img/icon.png">
+
+</head>
+
+<body>
+
+    <div class="container" id='game'>
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+            Rating :
+        	<ul class="stars">
+        		<li><i class="fa fa-star" id='starThree'></i></li>
+        		<li><i class="fa fa-star" id='starTwo'></i></li>
+        		<li><i class="fa fa-star" id='starOne'></i></li>
+        	</ul>
+
+            | Moves : <span class="moves" id='move'>0</span> |
+            
+            Time : <span id='timer'>0</span>
+
+            <div class="restart">
+
+                <i class="fa fa-repeat" id='restart'></i>
+                
+            </div>
+            
+        </section>
+
+        <ul class="deck" id='deckParent'></ul>
+
+    </div>
+
+    <!-- Final Scoreboard / Won -->
+
+<div class="center-block center">
+    <div class='hide result' id="final">
+        <span id='mark'></span>
+        <h2 id='rainbow'>Congratulations! You Won!</h2>
+        <p>In <span id='end-time'>0</span> moves , with<span id='end-moves'>0</span> seconds and a<span id='end-stars'></span> star rating!</p>
+        <p>Wooooooo!</p>
+        <button id= 'restart-Game' class='btn btn-success'>Play Again!</button>
+    </div>
+</div>
+
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+
+</html>
